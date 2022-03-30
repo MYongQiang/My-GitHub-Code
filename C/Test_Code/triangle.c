@@ -2,6 +2,7 @@
 #include "stdlib.h"
 #include "math.h"
 
+//#测试
 int main(void)
 {
     float a = 0, b = 0, c = 0;
