@@ -1,7 +1,7 @@
 #include "stdio.h"
 #include "stdlib.h"
 
-//#测试
+//#测试1
 int main(void)
 {
     unsigned char State = 0x06;
