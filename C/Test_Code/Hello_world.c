@@ -8,6 +8,7 @@ int main(void)
     printf("%x\n",State &= 1 << 0);
 //    while(!(State &= 1 << 0)){};
     printf("Hello world!\n");
+    printf("你好世界！\n");
     
     exit(0);
 }
