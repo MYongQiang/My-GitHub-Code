@@ -10,7 +10,7 @@ int main(void)
 
     scanf("%f %f %f",&a,&b,&c);
     
-    if((a+b <= c) || (a+c <= b) || (b+c <= a))
+    if((a+b <= c) || (a+c <= b) || (b+c <= a))  //逻辑或
     {
         exit(-1);
     }
