@@ -1,7 +1,7 @@
 #include "stdio.h"
 #include "stdlib.h"
 
-
+#define PRINCIPAL   (100)
 #define INTEREST_RATE_A (0.1)   //A的年利率
 #define INTEREST_RATE_B (0.05)  //B的年利率
 
@@ -9,12 +9,11 @@
 int main(void)
 {
     int Year = 0;
-    float PRINCIPAL_A = 100;     //A的投资金额
-    float PRINCIPAL_B = 100;      //B的投资金额
-    float Interest_A = 0, Interest_b = 0;
-    float Rental_A = 100, Rental_B = 100;
+    float PRINCIPAL_A = 0;        //A的投资金额
+    float Rental_B = 0, Rental_A = 0;
 
-    Rental_B = PRINCIPAL_B;
+    Rental_A = Rental_B = PRINCIPAL_A = PRINCIPAL;
+
     //A:
     //  1 -> 100 + (100 * 0.1);
     //  2 -> 100 + (100 * 0.1) + (100 * 0.1);
@@ -45,8 +44,7 @@ int main(void)
     {
         Rental_A += (PRINCIPAL_A * INTEREST_RATE_A);    //进行+=操作这里的被乘数不能和积为一个变量
 
-        PRINCIPAL_B += (Rental_B * INTEREST_RATE_B);
-        Rental_B = PRINCIPAL_B;
+        Rental_B += (Rental_B * INTEREST_RATE_B);
 
         Year++;
         printf("PRINCIPAL_A * INTEREST_RATE_A = %f\r\n",(PRINCIPAL_A * INTEREST_RATE_A));
