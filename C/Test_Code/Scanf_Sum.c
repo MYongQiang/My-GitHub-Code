@@ -9,7 +9,7 @@ int main(void)
 
     while(scanf("%d",&Num) == 1)
     {
-        Sum+= Num;
+        Sum += Num;
     }
     printf("Sum = %d\n",Sum);
 
