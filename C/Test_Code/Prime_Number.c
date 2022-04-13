@@ -1,7 +1,7 @@
 #include "stdio.h"
 #include "stdlib.h"
 
-//1000
+//1000 within all prime
 int main(void)
 {
     int i = 0, j = 0;
