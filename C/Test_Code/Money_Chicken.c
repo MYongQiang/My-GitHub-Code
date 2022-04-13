@@ -10,7 +10,7 @@
 //100 / 3 == 33;
 int main(void)
 {
-    int Cock = 0, Hen = 0, Chick = 0;
+    float Cock = 0, Hen = 0, Chick = 0;
 
     for(Cock = 0; Cock < 20; Cock++)
     {
@@ -19,7 +19,7 @@ int main(void)
             Chick = 100-(Cock+Hen);
             if(Chick*(1.0/3) + Cock*5 + Hen*3 == 100)
             {
-               printf("Cock = %d Hen = %d Chick = %d\n",Cock,Hen,Chick);
+               printf("Cock = %f Hen = %f Chick = %f\n",Cock,Hen,Chick);
             }
         }
     }
