@@ -20,7 +20,7 @@ int main(void)
 
     for(i = 0;  i < sizeof(arr)/sizeof(arr[0]) - 1; i++)
     {
-        for(j = 0; j < sizeof(arr)/sizeof(arr[0]) - i - 1; j++)
+        for(j = 0; j < sizeof(arr)/sizeof(arr[0]) - i - 1; j++) //每次上浮一个数据进行减去并两两进行比较，比较次数应该-1
         {
             if(arr[j] > arr[j+1])
             {

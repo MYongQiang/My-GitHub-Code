@@ -51,7 +51,7 @@ int main(void)
     for(i = 0; i < sizeof(arr)/sizeof(arr[0]) - 1; i++)
     {   
         k = i;
-        for(j = i + 1; j < sizeof(arr)/sizeof(arr[0]); j++)
+        for(j = i + 1; j < sizeof(arr)/sizeof(arr[0]); j++) //拿一个数与其他每一个数据进行比较，每比较一次会将满足条件的数据进行调换，比较次数应该为整个数据个数。
         {
             if(arr[k] > arr[j])
             {

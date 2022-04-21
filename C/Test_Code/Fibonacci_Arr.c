@@ -29,7 +29,7 @@ int main(void)
     printf("x = %d arr[x] = %d\n",x,arr[x]);
     printf("y = %d arr[y] = %d\n",y,arr[y]);
 
-    while(x < y)    //这里是否不能填写(x != y) 为什么会出现错误
+    while(x < y)    //这里是否不能填写(x != y) 为什么会出现错误 是否对于奇数个可以偶数个不能使用(x != y)
     {
         temp = arr[x];
         arr[x] = arr[y];
