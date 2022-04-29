@@ -7,7 +7,7 @@
 //计算二维数组中的最大值
 int main(void)
 {
-    int i = 0, j = 0, Max = 0;
+    int i = 0, j = 0, Max = 0, Line = 0,List = 0;
     int arr[M][N] = {0};
 
 #if 1  
@@ -37,11 +37,13 @@ int main(void)
             if(arr[i][j] >= Max)
             {
                 Max = arr[i][j];
+                Line = i;
+                List = j;
             }
         }
     }
 
-    printf("Max = %d\n",Max);
+    printf("Max = arr[%d][%d] - > %d\n",i,j,Max);
 
     exit(0);
 }
